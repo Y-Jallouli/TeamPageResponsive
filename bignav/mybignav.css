@@ -1,0 +1,40 @@
+.navbande{
+    width: 100%;
+    background-color: #fff;
+    height: 58px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+}
+
+@media only screen and (min-width: 830px){
+    .smallnav{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 830px){
+    .bignav{
+        display: none;
+    }
+    .smallnav{
+        display: block;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .bignav{
+        display: none;
+    }
+    .smallnav{
+        display: block;
+    }
+}

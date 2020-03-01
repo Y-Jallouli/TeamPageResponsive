@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.container ul.menu {
+  height: 50px;
+  width: 50px;
+}
+.container ul.menu li {
+  position: relative;
+  background: black;
+  margin: 10px;
+  height: 6px;
+  width: 45px;
+  transition: transform .3s, width .3s;
+}
+.container .active_menu li:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+  transition: transform .3s;
+}
+.container .active_menu li:nth-child(2) {
+  width: 0;
+  transition: width .3s;
+}
+.container .active_menu li:nth-child(3) {
+  bottom: 18px;
+  transform: rotate(-135deg);
+  transition: transform .3s;
+}
+.container ul.links {
+  overflow: hidden;
+  width: 0;
+  margin-left: 0px;
+  transition: width .4s, margin-left .4s;
+}
+.container ul.links li {
+  margin: 5px;
+}
+.container ul.links li a {
+  color: white;
+  text-decoration: none;
+  transition: color .5s;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  transition: color .5s, margin-left .5s;
+}
+.container ul.links li a:hover {
+  color: rgb(82, 82, 82);
+  margin-left: 20px;
+  transition: color .5s, margin-left .5s;
+}
+.container .active_links {
+  width: 370px !important;
+  margin-left: 35px !important;
+  transition: width .4s, margin-left .4s;
+}

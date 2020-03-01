@@ -1,0 +1,299 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+  }
+
+.landingpage{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+
+.first-half{
+    float: left;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom-path{
+    height: 110%;
+    width: 510px;
+    position: absolute;
+    top: 48.8% ;
+    left: 0;
+    transform: translate(-8%, -50%);
+    z-index: 5;
+}
+
+.second-half{
+    float: right;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg1.png);
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 1100px){
+    #animation-bg{
+        width: 750px ;
+        pointer-events: none;
+        border: none;
+        overflow: hidden;
+        transform: translate(30%, 38%);
+    }
+}
+@media only screen and (min-width: 1100px){
+    #animation-bg{
+        width: 900px ;
+        pointer-events: none;
+        border: none;
+        overflow: hidden;
+        transform: translate(40%, 38%);
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1278px){
+    #animation-bg{
+        width: 800px ;
+        pointer-events: none;
+        border: none;
+        overflow: hidden;
+        transform: translate(30%, 38%);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1100px){
+    .lg-and-md{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .edge{
+        width: 200px;
+        height: 100vh;
+    }
+
+    .sm{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1101px){
+
+    .lg-and-md{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .edge{
+        width: 300px;
+        height: 100vh;
+    }
+
+    .sm{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 830px){
+    .lg-and-md{
+        display: none;
+    }
+    .sm{
+        display: block;
+        position: relative;
+        width: 100vw;
+    }
+    .first-half-sm{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .custom-path-sm{
+        width: 120%;
+        height: 756px;
+        position: absolute;
+        top: 47% ;
+        left: 0;
+        transform: translate(-8%, -50%);
+        z-index: 5;
+        background-image: radial-gradient( circle 810px at 19.2% 35.5%,  rgba(253,230,143,1) 0%, rgba(253,168,137,1) 90% );    
+    }
+    .bignav{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .lg-and-md{
+        display: none;
+    }
+    .sm{
+        display: block;
+        position: relative;
+        width: 100vw;
+    }
+    .first-half-sm{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .custom-path-sm{
+        width: 120%;
+        height: 756px;
+        position: absolute;
+        top: 47% ;
+        left: 0;
+        transform: translate(-8%, -50%);
+        z-index: 5;
+        background-image: radial-gradient( circle 810px at 19.2% 35.5%,  rgba(253,230,143,1) 0%, rgba(253,168,137,1) 90% );    
+    }
+    .bignav{
+        display: none;
+    }
+
+  }
+
+
+
+
+
+/*
+
+
+.myanim-lg{
+    width: 900px ;
+    pointer-events: none;
+    border: none;
+    overflow: hidden;
+    transform: translate(8%, 35%);
+}
+
+.myanim-md{
+    width: 750px ;
+    pointer-events: none;
+    border: none;
+    overflow: hidden;
+    transform: translate(15%, 40%);
+}
+
+*/
+
+.only-lg{
+    position: absolute;
+    right: 0px;
+    top: 0;  
+    
+}
+/*
+.edge{
+    width: 300px;
+    height: 100vh;
+}
+*/
+.scrollanimation{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-image: linear-gradient( 109.6deg,  rgba(104,183,249,0.4) 31.3%, rgba(176,248,200,0.4) 100.2% );
+    border-radius: 50px;
+}
+.lg-and-md{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-sm{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bignav{
+    height: 58px;
+}
+
+.nav-item{
+    text-decoration: none !important;
+}
+
+.smallnav{
+    position: absolute;
+    right: 60px;
+}
+
+.links{
+    position: absolute;
+    right: 0;
+    background-color: rgba(179, 214, 214, 0.377);
+    border-radius: 20px !important;
+    background-color: #1f2029d0;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.sm{
+    position: relative;
+    width: 100vw;
+}
+
+
+.first-half-sm{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.custom-path-sm{
+    width: 120%;
+    height: 756px;
+    position: absolute;
+    top: 47% ;
+    left: 0;
+    transform: translate(-8%, -50%);
+    z-index: 5;
+    background-image: radial-gradient( circle 810px at 19.2% 35.5%,  rgba(253,230,143,1) 0%, rgba(253,168,137,1) 90% );    
+}
+*/
